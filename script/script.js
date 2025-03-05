@@ -207,11 +207,8 @@ document.getElementById('btn-completed-6')
 // clear history 
 document.getElementById('clear-btn')
   .addEventListener('click', function () {
-    let activityLog = document.getElementById("activity-log");
-    let newEntries = document.querySelectorAll("#activity-log .entry");
-    newEntries.forEach(entry => entry.remove());
-  });
-
+    document.getElementById('activity-log').innerHTML = '';
+  })
 
 // Adding main.html
 document.getElementById('news-container')
