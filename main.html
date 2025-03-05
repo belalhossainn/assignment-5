@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <!-- font add -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
+
+  <!-- tailwind add -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+  <header class="mt-2">
+    <nav class="max-w-6xl max-h-screen bg-white flex justify-between rounded-xl p-1 mx-auto">
+      <div class="flex items-center m-4">
+        <img src="./assets/logo.png" alt="">
+        <p class="text-3xl m-2">Dev<span class="font-bold">Board</span> </p>
+      </div>
+      <div class="flex items-center mx-2">
+        <button id="desk-btn" class="btn bg-[#3752FD] rounded-md text-white">Back To Desk</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- main section -->
+   <main>
+    <h1 class="text-xl font-bold text-center my-5">Blog</h1>
+
+    <!-- Question answer -->
+<div class="max-w-6xl max-h-screen bg-white rounded-xl p-4 mx-auto mb-2">
+  <p class="font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+  <hr>
+  <p>By ID: document.getElementById() By Class: document.getElementsByClassName() By Tag: document.getElementsByTagName() querySelector: document.querySelector() all: document.querySelectorAll()</p>
+</div>
+<div class="max-w-6xl max-h-screen bg-white rounded-xl p-4 mx-auto mb-2">
+  <p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</p>
+  <hr>
+  <p>HTML content inside an element. Returns all HTML tags and elements inside the element. only visible text inside an element. Ignores hidden elements (like display: none). sets all text content inside an element, including hidden text. Returns text exactly as it appears in the DOM.</p>
+</div>
+<div class="max-w-6xl max-h-screen bg-white rounded-xl p-4 mx-auto mb-2">
+  <p class="font-bold">Question-3: What is event delegation in the DOM?</p>
+  <hr>
+  <p>Event delegation in the DOM is a JavaScript technique where you attach a single event listener to a parent element instead of adding listeners to multiple child elements.</p>
+</div>
+<div class="max-w-6xl max-h-screen bg-white rounded-xl p-4 mx-auto mb-2">
+  <p class="font-bold">Question-4: What is event bubbling in the DOM?</p>
+  <hr>
+  <p>Event bubbling in JavaScript is a mechanism where an event triggered on a child element propagates upward through its ancestors in the DOM.</p>
+</div>
+<div class="max-w-6xl max-h-screen bg-white rounded-xl p-4 mx-auto mb-2">
+  <p class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+  <hr>
+  <p>Create: document.createElement() Append: document.body.appendChild()
+    Remove: newElement.remove() Add: appendChild()</p>
+</div>
+   </main>
+
+   <script src="./script/utility.js"></script>
+</body>
+</html>
